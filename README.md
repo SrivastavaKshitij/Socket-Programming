@@ -21,7 +21,9 @@ The client should prompt the user to enter a transaction type, and the account a
 
 
 
-#PROJECT 2 ==> Task is to implement a Transport Layer protocol to transmit data with Reliable Data Transfer from a client (Sender) to a server (Receiver) in the presence of channel errors and loss. The protocol to be implemented by you is the Go-Back-N protocol. The protocol will be unidirectional in which data is sent in one direction only (client to server) with acknowledgements being sent in the reverse direction (server to client). Only positive ACKs are used. The transmission of packets will be done over UDP (that represents an unreliable network layer channel) using fixed UDP ports.
+#PROJECT 2 ==> Task is to implement a Transport Layer protocol to transmit data with Reliable Data Transfer from a client (Sender) to a server (Receiver) in the presence of channel errors and loss. The protocol to be implemented by you is the Go-Back-N protocol. 
+
+The protocol will be unidirectional in which data is sent in one direction only (client to server) with acknowledgements being sent in the reverse direction (server to client). Only positive ACKs are used. The transmission of packets will be done over UDP (that represents an unreliable network layer channel) using fixed UDP ports.
 
 Packet Formats
 The format of a data packet is shown in the figure below. Each data packet contains a 4-byte long header followed by a number of data characters. The header contains 2 fields, each of length 16 bits (2 bytes) as shown in the figure. You must convert the values in these fields into the network byte order when they are transmitted, and convert them back to host byte order when they are received.
